@@ -1,0 +1,42 @@
+body{
+	background-color:#FFB5B5;
+}
+h1,.text,p{
+	text-align:center;
+}
+.img2{
+	position: absolute;
+	-webkit-animation-name: move; /* Chrome, Safari, Opera */
+	-webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+	animation-name: move;
+	animation-duration: 4s;
+}
+.box{
+	margin: auto;
+	width: 150px;
+    height: 140px;
+	border: 3px solid #73AD21;
+}
+.buttons{
+	position: relative;
+	margin: center;
+	height: 500px:
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes move {
+    0% {-webkit-transform: rotate(0deg);left:0px;}
+    30%  {-webkit-transform: rotate(30deg); left:300px;}
+	60% {-webkit-transform: rotate(-30deg); left:450px;}
+    100% {-webkit-transform: rotate(0deg); left:600px;}
+}
+
+/* Standard syntax */
+@keyframes move {
+    0% {transform: rotate(0deg);left:0px;}
+    30%  {transform: rotate(30deg); left:300px;}
+	60% {transform: rotate(-30deg); left:450px;}
+    100% {transform: rotate(0deg); left:600px;}
+}
+#day1{
+	font-family:cursive;
+}

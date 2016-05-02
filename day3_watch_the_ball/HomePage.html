@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>LitFireDragon</title>
+	<link rel="stylesheet" href="HomePage.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<script src="file:///C:\Users\andy\Desktop\coding\net\jquery.js"></script>
+	<script language=javascript> 
+	$("document").ready(function(){
+		$("#babyball").click(function(){	
+			$("#babyball").css({"animation":"pause"});
+			$("#babyball").css({"animation":"pause", "opacity":"0","transition": "opacity 2s ease-out","z-index":"2px"});
+			$("#litfiredragon").css({"animation":"pause","opacity":"1", "transition": "opacity 2s ease-in"});
+			$(".shadow").css({"animation":"pause","opacity":"0.05"});
+			int = setInterval(bomb,2000);//2秒後將會重複執行bomb方法
+		});
+	});
+	function bomb(){
+		var lFD = document.getElementById("litfiredragon");	
+		$("#litfiredragon").css({"transform":"scale(4)"});
+		$(".shadow").css({"transform":"scale(3)","top":"415px","z-index":"3px"});
+		document.getElementById("p1").innerHTML="我是小火龍!!";//更改內文
+		clearInterval(int);//清除setInterval所返回的id 也就是停止他重複執行
+	};
+	</script>
+</head>
+<body>
+	<h1>LitFireDragon
+	 <a title = "Home" href="../day1_hello_world/HomePage.html"><img src="home.png" alt="home" width="30" height="30"></a></h1>
+	 <p id ="p1">你可以點看看這顆寶貝球~</p>
+	<div class = "box">
+		<img src="litfiredragon.png" alt= "litfiredragon" width="150" height="140" id = "litfiredragon">
+		<img src="babyball.png" alt= "babyball" width="150" height="140" id = "babyball">
+	</div>
+	<div class = "shadow"></div>
+	
+</body>
+</html>
