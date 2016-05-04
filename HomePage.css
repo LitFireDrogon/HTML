@@ -1,0 +1,14 @@
+body{
+	background-color:#FFB5B5;
+}
+h1{
+	text-align:center;
+}
+img {
+  display:block;
+  margin: auto;
+  /* max-width: 500px; 建議可加上「最大寬度」讓圖片不會過大。500px只是一個例子*/
+}
+.links{
+	font-family:cursive;
+}

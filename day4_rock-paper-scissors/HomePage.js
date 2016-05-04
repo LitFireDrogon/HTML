@@ -36,17 +36,17 @@ var imgNum = 1;
 function ChangeImg(p1Choose){
 	if(p1Choose==0){
 		if(imgNum == 1){
-			document.getElementById("p1hand").src="scissors.png";
-			document.getElementById("p2hand").src="scissors.png";
+			document.getElementById("p1hand").src="../resource/scissors.png";
+			document.getElementById("p2hand").src="../resource/scissors.png";
 			document.getElementById("message").innerHTML +="..";
 		}
 		else if(imgNum == 2){
-			document.getElementById("p1hand").src="rock.png";
-			document.getElementById("p2hand").src="rock.png";
+			document.getElementById("p1hand").src="../resource/rock.png";
+			document.getElementById("p2hand").src="../resource/rock.png";
 		}
 		else if(imgNum == 3){
-			document.getElementById("p1hand").src="paper.png";
-			document.getElementById("p2hand").src="paper.png";
+			document.getElementById("p1hand").src="../resource/paper.png";
+			document.getElementById("p2hand").src="../resource/paper.png";
 			document.getElementById("message").innerHTML ="Choose One";
 			imgNum=0;
 		}
@@ -69,22 +69,22 @@ function Play(p1Choose){
 function ReadyToShow(){
 	p2Choose = Math.floor((Math.random() * 3)+1); //1~3
 	if(p2Choose == 1){
-		document.getElementById("p2hand").src="scissors.png";
+		document.getElementById("p2hand").src="../resource/scissors.png";
 	}
 	else if(p2Choose == 2){
-		document.getElementById("p2hand").src="rock.png";
+		document.getElementById("p2hand").src="../resource/rock.png";
 	}
 	else if(p2Choose == 3){
-		document.getElementById("p2hand").src="paper.png";
+		document.getElementById("p2hand").src="../resource/paper.png";
 	}
 	if(p1Choose == 1){
-		document.getElementById("p1hand").src="scissors.png";
+		document.getElementById("p1hand").src="../resource/scissors.png";
 	}
 	else if(p1Choose == 2){
-		document.getElementById("p1hand").src="rock.png";
+		document.getElementById("p1hand").src="../resource/rock.png";
 	}
 	else if(p1Choose == 3){
-		document.getElementById("p1hand").src="paper.png";
+		document.getElementById("p1hand").src="../resource/paper.png";
 	}
 	$("#p1hand").css({"opacity":"1","transition": "opacity 1s ease-in"});
 	$("#p2hand").css({"opacity":"1","transition": "opacity 1s ease-in"});
